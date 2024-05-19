@@ -190,9 +190,7 @@ function VenueDetailPage() {
                         <p className="nav-link mr-4 pr-2">Giờ đóng cửa: {venue.CloseTime}</p>
                       </div>
                       <div>
-                        {(venue.Id === '455' || venue.Id === '456' || venue.Id === '457') && (
-                          <Popupmenu venueId={venue?.Id || ''} venueName={venue?.Name || ''} />
-                        )}
+                      <Popupmenu venueId={venue?.Id || ''} venueName={venue?.Name || ''} />
                       </div>
                     </div>
                   </div>
