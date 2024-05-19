@@ -19,7 +19,6 @@ export const RegisterSchema = z
     ConfirmPassword: z.string().min(8),
     LastName: z.string(),
     FirstName: z.string(),
-    Gender: z.string(),
   })
   .superRefine(({ Password, ConfirmPassword }, ctx) => {
     if (ConfirmPassword !== Password) {
