@@ -16,7 +16,6 @@ export function Header() {
             <HelpCircle size={24} className="mr-2" />
             <Help />
           </div>
-          <div className="mr-4 flex items-center text-black hover:text-gray-400">Blog</div>
           <Link to={'/schedule'} className="mr-4 flex items-center text-black hover:text-gray-400">
             <Clock size={24} className="mr-2" />
             <span>Xem lịch trình</span>
