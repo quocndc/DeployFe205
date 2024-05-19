@@ -19,7 +19,7 @@ export function Header() {
           <div className="mr-4 flex items-center text-black hover:text-gray-400">Blog</div>
           <Link to={'/schedule'} className="mr-4 flex items-center text-black hover:text-gray-400">
             <Clock size={24} className="mr-2" />
-            <span>Xem lịch trình gần đây</span>
+            <span>Xem lịch trình</span>
           </Link>
           <Navigation />
         </div>
