@@ -117,20 +117,6 @@ function RegisterForm() {
             )}
           />
         </div>
-        <FormField
-          control={form.control}
-          name="Gender"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel> Giới tính </FormLabel>
-              <FormControl>
-                <Input disabled={isLoading} placeholder="Gender" type="Gender" {...field} />
-              </FormControl>
-              <FormDescription />
-              <FormMessage />
-            </FormItem>
-          )}
-        />
 
         <FormField
           control={form.control}
@@ -161,21 +147,6 @@ function RegisterForm() {
             </FormItem>
           )}
         />
-        <FormField
-          control={form.control}
-          name="Avatar"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel> Avatar </FormLabel>
-              <FormControl>
-                <input disabled={isLoading} type="file" {...field} accept="image/*" />
-              </FormControl>
-              <FormDescription>Chọn file để làm ảnh đại diện</FormDescription>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
         <Button disabled={isLoading} type="submit" className="w-full bg-blue-700">
           {isLoading && <IconReload className="mr-2 h-5 w-5 animate-spin" />}
           Đăng kí{' '}
